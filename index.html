@@ -1,1 +1,147 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Codon</title>
+  <style>
+    :root {
+      --black: #000;
+      --white: #fff;
+      --gray-light: #e0e0e0;
+      --gray-medium: #999;
+      --gray-dark: #333;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: var(--white);
+      color: var(--gray-dark);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--black);
+      color: var(--white);
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 80px;
+      height: 80px;
+      margin-right: 1rem;
+      background-color: var(--gray-light);
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: var(--black);
+      border-bottom: 2px solid var(--gray-light);
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      background-color: var(--gray-light);
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      color: var(--black);
+    }
+
+    footer {
+      background-color: var(--gray-light);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: var(--gray-dark);
+    }
+
+    a {
+      color: var(--gray-dark);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="codon-icon.png" alt="Codon Logo" />
+      <h1>Codon</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Codon</h2>
+      <p>Codon is a focused IT consultancy offering strategic and technical expertise to startups and small businesses. From architecture design to product implementation, we guide you every step of the way.</p>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Services</h2>
+      <ul>
+        <li><strong>Software Development</strong><br>Custom-built web and mobile applications that scale with your business.</li>
+        <li><strong>Cloud Engineering</strong><br>Robust, secure deployments on AWS, Azure, or Google Cloud.</li>
+        <li><strong>Fractional CTO</strong><br>Get strategic leadership without full-time cost.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach out to us at <a href="mailto:hello@codon-services.com">hello@codon-services.com</a>. We're ready to help your ideas grow.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Codon. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
